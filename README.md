@@ -7,6 +7,9 @@ Open Mall Taro.js 是一个基于 Taro.js 开发的多端电商小程序项目�
 
 使用tarojs 开发移动端商城， 有赞红色风格， 先整体设计，再实现页面。
 由于有长者使用，所以设计时需考虑布局优化
+注意：使用模拟数据即可
+**说明**：项目目前使用模拟数据进行开发和测试，实际部署时需要替换为真实的 API 接口。
+禁止使用 await，优先使用 Promise
 
 ## 技术栈
 
@@ -29,66 +32,12 @@ Open Mall Taro.js 是一个基于 Taro.js 开发的多端电商小程序项目�
 | 辅助文字 | #999999 | 辅助信息、提示文字 |
 | 边框颜色 | #E5E5E5 | 边框、分割线 |
 
-## 目录结构
-
-```
-├── config/            # 项目配置文件
-│   ├── dev.js         # 开发环境配置
-│   ├── index.js       # 主配置文件
-│   └── prod.js        # 生产环境配置
-├── src/               # 源代码目录
-│   ├── components/    # 公共组件
-│   ├── pages/         # 页面
-│   ├── services/      # 数据服务,模拟数据
-│   ├── app.config.js  # 应用配置
-│   ├── app.js         # 应用入口
-│   └── app.less       # 全局样式
-├── .editorconfig      # 编辑器配置
-├── .env.development   # 开发环境变量
-├── .env.production    # 生产环境变量
-├── .env.test          # 测试环境变量
-├── .eslintrc          # ESLint 配置
-├── .gitignore         # Git 忽略文件
-├── babel.config.js    # Babel 配置
-├── commitlint.config.mjs  # Commitlint 配置
-├── package-lock.json  # 依赖锁文件
-├── package.json       # 项目依赖
-├── project.config.json  # 项目配置
-└── stylelint.config.mjs  # Stylelint 配置
-```
-
-
-## 数据服务
-
-数据服务统一放在 `services` 目录下，包含以下模块：
 
 
 
-**说明**：项目目前使用模拟数据进行开发和测试，实际部署时需要替换为真实的 API 接口。
 
 
 
-### 构建生产版本
-
-#### 微信小程序
-
-```bash
-npm run build:weapp
-```
-
-#### H5
-
-```bash
-npm run build:h5
-```
 
 
-
-## 注意事项
-
-数据服务统一放在 services 目录
-
-测试时使用 `build:h5` 命令
-
-禁止使用 await，优先使用 Promise
 
