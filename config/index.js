@@ -51,6 +51,7 @@ export default defineConfig(async (merge, { command, mode }) => {
       },
     },
     h5: {
+      esnextModules: ["@taroify"],
       publicPath: '/',
       staticDirectory: 'static',
       output: {
